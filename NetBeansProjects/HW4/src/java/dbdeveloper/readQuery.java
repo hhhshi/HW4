@@ -87,6 +87,10 @@ public class readQuery {
                 table += newuser.getUSERAGE();                    
                 table += "</td>";
                 
+                table += "<td>";
+                table += "<a href=delete?USER_ID=" + newuser.getUSER_ID() + "> Delete </a>";                    
+                table += "</td>";
+                
                 table += "</tr>";
             }
         } catch (SQLException ex) {
