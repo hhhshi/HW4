@@ -4,6 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="webStyle.css">
         <title>JSP Page</title>
     </head>
     
@@ -11,8 +12,10 @@
     
     <body>
         <h1>User Database</h1>
+
+
         <%=table %>
-        
+
         <br><br>
         
         <a href ="add">Add A New User</a>

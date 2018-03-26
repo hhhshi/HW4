@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="webStyle.css">
         <title>Add A New User</title>
     </head>
     <body>
@@ -16,7 +17,7 @@
             <label>User Age:</label>
             <input type="text" name="age" value="" />
             <br>
-            <input type="submit" name="submit" value="Submit" />
+            <input type="submit" name="submit" value="Submit" id="submit"/>
         </form>
     </body>
 </html>

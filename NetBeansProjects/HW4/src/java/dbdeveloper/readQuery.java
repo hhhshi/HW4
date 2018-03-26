@@ -65,7 +65,7 @@ public class readQuery {
         
         String table = "";
         
-        table += "<table border=1>";
+        table += "<table>";
         
         try {
             while(this.results.next()){
@@ -73,7 +73,7 @@ public class readQuery {
                 newuser.setUSER_ID(this.results.getInt("User_ID"));
                 newuser.setUSERNAME(this.results.getString("USERNAME"));
                 newuser.setUSERAGE(this.results.getInt("USERAGE"));
-                
+
                 table += "<tr>";
                 table += "<td>";
                 table += newuser.getUSER_ID();                    

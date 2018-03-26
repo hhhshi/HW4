@@ -1,0 +1,24 @@
+body {background-color:#D2B48C}
+
+table, td {
+           width: 200px;
+           height: 100%;
+           background-color: #F08080;
+           color: #FFFFFF;
+           border: 1px solid black;
+           border-collapse: collapse;
+           padding: 5px;
+           
+           text-align: left;
+           vertical-align: middle;
+           border-spacing: 1px;
+           border-color:white;
+}
+
+tr:hover{background-color: #CCCCCC;}
+tr:nth-child(even){background-color: #F2F2F2;}
+tr:nth-child(odd){background-color: #EDEDED;}
+
+a:link{color:#696969;}
+
+#submit {color:black; font-size:14px;}
