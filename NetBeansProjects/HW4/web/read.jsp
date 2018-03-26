@@ -12,5 +12,9 @@
     <body>
         <h1>User Database</h1>
         <%=table %>
+        
+        <br><br>
+        
+        <a href ="add">Add A New User</a>
     </body>
 </html>
