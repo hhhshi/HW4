@@ -5,13 +5,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="webStyle.css">
-        <title>JSP Page</title>
+        <title>User Database</title>
     </head>
     
     <% String table = (String) request.getAttribute("table"); %>
     
     <body>
         <h1>User Database</h1>
+        
+        <table id="thead">
+            <tr>
+                <th>User ID</th>
+
+                <th>User Name</th>
+
+                <th>User Age</th>
+
+                <th>Delete Or Not?</th>
+            </tr>
+        </table>
 
 
         <%=table %>

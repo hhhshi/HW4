@@ -19,5 +19,6 @@
             <br>
             <input type="submit" name="submit" value="Submit" id="submit"/>
         </form>
+        <a href="read">Back to the list</a>
     </body>
 </html>
