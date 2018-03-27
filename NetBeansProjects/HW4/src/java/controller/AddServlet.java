@@ -84,6 +84,7 @@ public class AddServlet extends HttpServlet {
             
             //set up a user object
             user newuser = new user();
+            //newuser.setUSER_ID(id);
             newuser.setUSERNAME(name);
             newuser.setUSERAGE(age);
             

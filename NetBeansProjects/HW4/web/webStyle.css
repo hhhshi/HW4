@@ -3,9 +3,9 @@ body {background-color:#D2B48C}
 td {
     width: 92px;
     height: 100%;
-    background-color: #F08080;
-    color: #FFFFFF;
-    border: 1px solid black;
+
+    color: black;
+    border: 1px solid white;
     border-collapse: collapse;
     padding: 5px;
     text-align: left;
@@ -17,17 +17,19 @@ td {
 th {
     width: 100px;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse; 
-    border-color:white;
-    background-color:#FFFF99; 
+    background-color: #F08080;
     color:#696969;}
 
 
 tr:hover{background-color: #CCCCCC;}
 tr:nth-child(even){background-color: #F2F2F2;}
-tr:nth-child(odd){background-color: #EDEDED;}
+
 
 a:link{color:#696969;}
 
 #submit {color:black; font-size:14px;}
+
+#clear {color:black; font-size:14px;}
+

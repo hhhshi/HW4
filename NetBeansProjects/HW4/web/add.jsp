@@ -9,16 +9,27 @@
     <body>
         <h1>Add A New User</h1>
         
+        
         <form name="addForm" action="addUser" method="get">
+            <table>
+            <tr>
+            <td><label>User Name:</label></td>
+            <td><input type="text" name="name" value="" /></td>
+            </tr>
             
-            <label>User Name:</label>
-            <input type="text" name="name" value="" />
-            <br>
-            <label>User Age:</label>
-            <input type="text" name="age" value="" />
-            <br>
+            <tr>
+            <td><label>User Age:</label></td>
+            <td><input type="text" name="age" value="" /></td>
+            </tr>
+            
+            </table>
             <input type="submit" name="submit" value="Submit" id="submit"/>
+            <input type="reset" value="clear" id="clear">
+            <br>
+            
         </form>
+        
+        <br>
         <a href="read">Back to the list</a>
     </body>
 </html>

@@ -63,6 +63,7 @@ public class AddQuery {
         
             PreparedStatement ps = conn.prepareStatement(query);
             
+            
             ps.setString(1, newuser.getUSERNAME());
             ps.setInt(2, newuser.getUSERAGE());
             
