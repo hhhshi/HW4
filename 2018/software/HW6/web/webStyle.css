@@ -1,0 +1,35 @@
+body {background-color:#D2B48C}
+
+td {
+    width: 92px;
+    height: 100%;
+
+    color: black;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border-spacing: 1px;
+    border-color:white;
+}
+
+th {
+    width: 100px;
+    height: 100%;
+    border: 1px solid white;
+    border-collapse: collapse; 
+    background-color: #F08080;
+    color:#696969;}
+
+
+tr:hover{background-color: #CCCCCC;}
+tr:nth-child(even){background-color: #F2F2F2;}
+
+
+a:link{color:#696969;}
+
+#submit {color:black; font-size:14px;}
+
+#clear {color:black; font-size:14px;}
+
