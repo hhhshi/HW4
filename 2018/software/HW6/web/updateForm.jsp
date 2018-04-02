@@ -35,5 +35,8 @@
             <br>
             
         </form>
+            
+        <br>
+        <a href="read">Back to the list</a>
     </body>
 </html>

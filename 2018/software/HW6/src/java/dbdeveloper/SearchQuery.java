@@ -1,4 +1,3 @@
-
 package dbdeveloper;
 
 import java.io.IOException;
@@ -13,24 +12,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.user;
 
-public class readQuery {
-
+public class SearchQuery {
+    
     private Connection conn;
     private ResultSet results;
     
-    public readQuery(){
-     
+    public SearchQuery(){
+        
         Properties props = new Properties();
         InputStream instr = getClass().getResourceAsStream("dbConnection.properties");
         try {
             props.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         String driver = props.getProperty("driver.name");
@@ -40,28 +39,28 @@ public class readQuery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn = DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
              
     }
     
-    public void doRead() {
+    public void doSearch(String USERNAME) throws SQLException{
         
         try {
-            String query = "Select * FROM USER_AGE ORDER BY USER_ID ASC";
-            PreparedStatement ps = conn.prepareStatement(query);
-            this.results = ps.executeQuery();
+        String query = "SELECT * FROM USER_AGE WHERE UPPER(USERNAME) LIKE ? ORDER BY USER_ID ASC";
+        
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.setString(1, "%" + USERNAME.toUpperCase() + "%");
+        this.results = ps.executeQuery();
         } catch (SQLException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
-    
-    
     
     public String getHTMLtable(){
         
@@ -100,7 +99,7 @@ public class readQuery {
                 table += "</tr>";
             }
         } catch (SQLException ex) {
-            Logger.getLogger(readQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         table += "</table>";
@@ -109,4 +108,8 @@ public class readQuery {
                 
     }
     
-}
+
+    }
+    
+    
+

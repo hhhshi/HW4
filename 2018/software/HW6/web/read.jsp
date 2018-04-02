@@ -21,7 +21,9 @@
 
                 <th>User Age</th>
 
-                <th>Delete Or Not?</th>
+                <th>Update?</th>
+                
+                <th>Delete?</th>
             </tr>
         </table>
 
@@ -31,5 +33,7 @@
         <br><br>
         
         <a href ="add">Add A New User</a>
+        <br><br>
+        <a href="search.jsp">Search Users</a>
     </body>
 </html>

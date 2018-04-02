@@ -11,6 +11,7 @@
     <body>
         <h1>User Age Database</h1>
         
-        <a href="read">View All Users</a>
+        <a href="read">View All Users</a> <br><br>
+        <a href="search.jsp">Search Users</a> 
     </body>
 </html>
