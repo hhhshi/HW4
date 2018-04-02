@@ -1,5 +1,7 @@
 body {background-color:#D2B48C}
 
+input[readonly] {background-color:lightgray;}
+
 td {
     width: 92px;
     height: 100%;
