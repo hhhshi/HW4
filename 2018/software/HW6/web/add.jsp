@@ -29,7 +29,9 @@
             
         </form>
         
-        <br>
+        <br><br>
+        <a href="index.jsp">Home Page</a>
+        <br><br>
         <a href="read">Back to the list</a>
     </body>
 </html>

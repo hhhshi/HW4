@@ -1,4 +1,31 @@
-body {background-color:#D2B48C}
+body {background-color:#D2B48C;}
+
+.wrap{text-align: center;
+      width:800px;
+      border: 5px solid black;
+      margin-top: 20px;
+      margin:auto;
+      padding-bottom: 20px;
+}
+
+.header{padding:25px;}
+
+.footer{padding-top:60px;}
+
+.main{text-align: left;
+      padding-top:30px;}
+
+/* Fat Erik's Pipelist */
+/* http://css.maxdesign.com.au/listamatic/horizontal32.htm*/
+#navcontainer {border-top:2px solid gray;
+               border-bottom:2px solid gray;}
+
+#navlist li{display: inline;
+            color:darkslategray;}
+
+#navlist li:before {content: "| "; }
+#navlist li:first-child:before {content: ""; }
+
 
 input[readonly] {background-color:lightgray;}
 

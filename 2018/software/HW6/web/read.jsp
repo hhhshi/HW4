@@ -30,10 +30,13 @@
 
         <%=table %>
 
+        <br><br><br>
+        <a href="index.jsp">Home Page</a>
         <br><br>
-        
         <a href ="add">Add A New User</a>
         <br><br>
         <a href="search.jsp">Search Users</a>
+
+        
     </body>
 </html>

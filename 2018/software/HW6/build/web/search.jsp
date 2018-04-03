@@ -13,11 +13,16 @@
             
             <input type="text" name="searchVal" value="" />
             
-            <br>
+            <br><br>
             
             <input type="submit" name="submit" value="Search" />
             
         </form>
-             
+        
+        <br><br>
+        <a href="index.jsp">Home Page</a>
+        <br><br>
+        <a href="read">Back to the list</a>
+        
     </body>
 </html>
