@@ -32,7 +32,6 @@ input[readonly] {background-color:lightgray;}
 td {
     width: 92px;
     height: 100%;
-
     color: black;
     border: 1px solid white;
     border-collapse: collapse;
