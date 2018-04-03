@@ -9,6 +9,13 @@
         <title>Update A User</title>
     </head>
     <body>
+        <div class ="wrap">
+
+            <%@ include file="includes/header.jsp" %>   
+
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main">
         <h1>Update A User Record</h1>
         
         <form name="updateForm" action="updateUser" method="get">
@@ -38,5 +45,11 @@
             
         <br>
         <a href="read">Back to the list</a>
+        
+        </div>
+
+        <%@ include file="includes/footer.jsp" %>
+
+        </div>
     </body>
 </html>
