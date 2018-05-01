@@ -1,0 +1,120 @@
+body{background-color:#D2B48C;}
+
+.addinfo{
+    border: solid 2px black;
+    text-align: center;
+    background: #F08080;
+    color:black;
+    font-size: .8em;
+    width:300px;
+    padding:30px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    display: white;
+}
+
+.readtable{
+    border: solid 2px black;
+    text-align: center;
+    background: #FFFFFF;
+    color:#696969;
+    font-size: .8em;
+    width:800px;
+    padding:30px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    display: white;
+}
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    border-spacing: 5px;
+}
+table,th,td{
+    border:1px solid black;
+}
+th,td{
+    padding: 15px;
+}
+
+th{
+    hight:500px;
+    text-align: center;
+    background-color:#F08080;
+}
+
+tr:hover{
+    background-color: #CCCCCC;
+}
+
+tr:nth-child(even){
+    background-color: #EDEDED;
+}
+
+.update td{
+    border:30px;
+    height:25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+input[readonly] {background-color: gray;}
+
+
+.wrap{text-align: center; width:90%; margin: 0 auto; border: 8px solid black; margin-top: 25px;}
+
+.header{background-color:yellow; text-align: left; padding: 25px;}
+
+.headerImg{float:left; width:220px; height: 105px; }
+
+.headerText{float:left; background-color: yellow; height: 105px; padding-top: 50px; padding-left: 25px;}
+
+.main{background-color: pink; text-align: left; padding: 25px;}
+
+.footer{background-color: green; text-align: left; padding: 25px;}
+
+
+
+/*Fat Erik's Pipelist*/
+/* http://css.maxdesign.com.au/listamatic/horizontal32.htm*/
+.navcontainer { margin-left: 30px; text-align: left;}
+.navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.navlist li:before { content: "| "; }
+.navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }

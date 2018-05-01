@@ -1,0 +1,35 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/Stylesheet.css"/>
+        <title>Search bookmarks</title>
+    </head>
+    <body>
+        <div class="wrap"> <!--div to hold all other divs -->
+            >
+            <%@ include file="includes/menu.jsp"   %>
+            <div class ="main">
+                <h1>Search Bookmarks</h1>
+                <hr>
+                <form name="searchForm" action="search" method="get">
+                <input type="text" name="searchVal" value=""/>
+                <br>
+                <input type="submit" name="submit" value="Search"/>
+                <a href="read"> Cancel </a>
+            </div>
+                <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                
+                    <p class="copyright text-muted small">Copyright 2018 MSCI 3300. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        </div>
+    </body>
+</html>
